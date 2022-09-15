@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #allpage {
+        display: flex;
+        justify-content: center;
+      }
+      .row {
+        margin: 10px;
+        display: flex;
+        align-items: center;
+      }
+      select {
+        height: 20px;
+      }
+      #employeetable {
+        margin-top: 50px;
+      }
+      #showdetails {
+        width: 70vw;
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+      }
+      #showdetailsr {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px;
+      }
+      button{
+        width: 100px;
+        height: 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="allpage">
+        <h1>1.</h1>
+      <div class="row">
+        <p>Position :</p>
+        <select id="position">
+          <option selected disabled></option>
+          <option>Manager</option>
+          <option>Cashier</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <p>Type :</p>
+        <select id="type">
+          <option selected disabled></option>
+          <option>Hourly</option>
+          <option>Monthly</option>
+          <option>Daily</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <p>isAvailable :</p>
+        <select id="available">
+          <option selected disabled></option>
+          <option>True</option>
+          <option>False</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+        <h1>2</h1>
+    <div id="showdetails">
+     
+      <button onclick="showKeys()">Show Keys</button>
+    </div>
+    </div>
+
+    <div id="showdetails"><p id="keys"></p></div>
+
+   <div class="row">
+        <h1>3</h1> <div id="showdetails">
+      <button onclick="showDetails()">Show Details</button>
+    </div></div>
+
+    <div id="showdetails"><div id="employeetable"></div></div>
+    <div class="row">
+        <h1>4</h1>
+    <div id="showdetails"><div id="Keyvalue"></div></div></div>
+    <div class="row">
+        <h1>5</h1>
+    <div id="showdetails"><div id="mergedarr"></div></div></div>
+    <div class="row">
+        <h1>2</h1>
+      <div id="showdetailsr">
+        <h2>Prevent</h2>
+        <button onclick="prevent()">Prevent</button>
+        <div class="row">
+            <p>Change Type :</p>
+            <select id="updatedtype">
+              <option selected disabled></option>
+              <option>Hourly</option>
+              <option>Monthly</option>
+              <option>Daily</option>
+            </select>
+            <button onclick="update()">Update</button>
+          </div>
+        
+      </div>
+
+      <div id="showdetails"><div id="employeetableprevent"></div></div></div>
+      
+    <script src="script.js"></script>
+  </body>
+</html>
