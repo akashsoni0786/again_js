@@ -33,4 +33,3 @@ Data.propTypes = {
 };
 export default Data
 
-// function data({ name, marks = 0, total = Math.max(1, score) })
