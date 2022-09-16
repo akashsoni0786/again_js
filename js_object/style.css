@@ -42,3 +42,11 @@ button{
 td{
     text-align: center;
 }
+.deleteicon{
+    cursor: pointer;
+    color:red
+}
+.deleteicon:hover{
+    cursor: pointer;
+    color:rgb(155, 8, 8)
+}
