@@ -20,3 +20,11 @@ input{
     border-radius: 10px;
 }
 
+.arrowsort{
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+}
+/* .arrowsort img{
+    width:"20px"
+} */
